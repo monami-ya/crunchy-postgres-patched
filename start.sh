@@ -59,7 +59,6 @@ export PG_ROOT_PASSWORD=$PG_ROOT_PASSWORD
 if [[ "x$PG_MODE" == "xmaster" ]]; then
   mkdir -p /pgdata/master
   chmod 0700 /pgdata/master
-  export PG_DATA=/pgdata/master
 else
   mkdir -p /pgdata/$HOSTNAME
   chmod 0700 /pgdata/$HOSTNAME
